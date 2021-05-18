@@ -1,9 +1,9 @@
 {
-  "name": "node-typescript-boilerplate",
+  "name": "logvar",
   "version": "0.0.0",
-  "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
+  "description": "Utility that prints variables in console log for debugging purpose.",
   "engines": {
-    "node": ">= 14.16 <15"
+    "node": ">= 14.16"
   },
   "devDependencies": {
     "@types/jest": "~26.0.23",
@@ -29,7 +29,7 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
-  "author": "Jakub Synowiec <github@jakubsynowiec.info>",
+  "author": "Nicola Zambello <nzambello@protonmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
     "tslib": "~2.2.0"
