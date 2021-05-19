@@ -1,11 +1,9 @@
-[![Sponsor][sponsor-badge]][sponsor]
 [![TypeScript version][ts-badge]][typescript-4-2]
 [![Node.js version][nodejs-badge]][nodejs]
 [![APLv2][license-badge]][license]
-[![Build Status - Travis][travis-badge]][travis-ci]
-[![Build Status - GitHub Actions][gha-badge]][gha-ci]
+[![Node.js CI](https://github.com/nzambello/logvar/actions/workflows/nodejs.yml/badge.svg)](https://github.com/nzambello/logvar/actions/workflows/nodejs.yml)
 
-# node-typescript-boilerplate
+# logvar
 
 👩🏻‍💻 Developer Ready: A comprehensive template. Works out of the box for most [Node.js][nodejs] projects.
 
