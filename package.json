@@ -11,7 +11,8 @@
     "build:watch": "tsc -w -p tsconfig.release.json",
     "lint": "eslint . --ext .ts,.tsx",
     "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepare": "husky install"
   },
   "engines": {
     "node": ">= 14.16"
@@ -46,8 +47,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
+      "commit-msg": "npx --no-install commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npx --no-install lint-staged"
     }
   },
   "lint-staged": {
