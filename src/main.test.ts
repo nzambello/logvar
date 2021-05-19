@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import logvar from '../src/main';
 
 global.console.log = jest.fn();
@@ -22,7 +20,9 @@ describe('logvar function', () => {
 
   it('should log an object', () => {
     logvar({ lorem });
-    expect(global.console.log).toHaveBeenCalledWith(`lorem: `, { placeholder: 'ipsum' });
+    expect(global.console.log).toHaveBeenCalledWith(`lorem: `, {
+      placeholder: 'ipsum',
+    });
   });
 
   it('should log variable value', () => {
