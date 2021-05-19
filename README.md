@@ -14,10 +14,9 @@ logvar({ life }); // logs `life: 42`
 ## Table of contents
 
 - [The purpose](#the-purpose)
-  * [The real purpose: life](#the-real-purpose-life)
+  - [The real purpose: life](#the-real-purpose-life)
 - [Installation](#installation)
 - [Usage](#usage)
-  * [Demo](#demo)
 - [License](#license)
 
 ## The purpose
@@ -52,7 +51,7 @@ yarn add --dev @nzambello/logvar
 
 ## Usage
 
-Try it out on [CodeSandBox](https://codesandbox.io/s/logvar-sandbox-ub45j).
+Try it out on [CodeSandBox](https://codesandbox.io/embed/logvar-sandbox-ub45j?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2Findex.js&theme=dark).
 
 ```ts
 import logvar from '@nzambello/logvar';
@@ -81,15 +80,6 @@ logvar(life);
 42
 */
 ```
-
-### Demo
-
-<iframe src="https://codesandbox.io/embed/logvar-sandbox-ub45j?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2Findex.js&theme=dark"
-  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-  title="logvar sandbox"
-  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
 
 ## License
 
