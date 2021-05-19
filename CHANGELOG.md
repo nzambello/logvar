@@ -1,3 +1,11 @@
+### [0.1.1](https://github.com/nzambello/logvar/compare/v0.1.0...v0.1.1) (2021-05-19)
+
+
+### Maintenance
+
+* rename with namespace ([fb92bb4](https://github.com/nzambello/logvar/commit/fb92bb4cd9327dd16aa56caa002bc14e40074340))
+* set access public npm ([c5e5ba6](https://github.com/nzambello/logvar/commit/c5e5ba67dbbf29e36f80a9bbd8f29ead091346cd))
+
 ## 0.1.0 (2021-05-19)
 
 
