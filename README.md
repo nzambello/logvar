@@ -1,11 +1,73 @@
+# logvar
+
 [![TypeScript version][ts-badge]][typescript-4-2]
 [![Node.js version][nodejs-badge]][nodejs]
 [![APLv2][license-badge]][license]
 [![Node.js CI](https://github.com/nzambello/logvar/actions/workflows/nodejs.yml/badge.svg)](https://github.com/nzambello/logvar/actions/workflows/nodejs.yml)
 
-# logvar
-
 Utility that prints variables in console log for debugging purpose.
+
+```js
+logvar({ life }); // logs `life: 42`
+```
+
+## The purpose
+
+This is the same old story: a lazy developer automating a simple but repetitive task when it is not really needed.
+Does the world need another utility for lazy devs? Maybe not, but I did this.
+
+I found myself writing things like:
+
+```js
+console.log(`loremIpsum:`, loremIpsum);
+```
+
+like 500 times a day to debug stuff in js.
+
+I was logging variables but having some of them, I needed a label with the name, so I logged a string with the name and then the value. 500 times a day.
+This utility is a helper function doing this for you.
+
+### The real purpose: life
+
+Was I losing time on this `console.log` thingy? Maybe not, but don't we developers have more to focus on?
+I think quality of life of a developer is compromised by a lot of stuff, debugging is tedious and this won't be annoying anymore!
+
+So, this utility is meant to hug you during your debugging time saying: "Hey, you're great, you will find out what is going on. Here's some help".
+
+## Usage
+
+```ts
+import logvar from 'logvar';
+
+const life = 42;
+const hello = 'world!';
+
+// passing an object with the varibles to inspect like this
+logvar({ life });
+/* prints:
+life: 42
+*/
+
+// passing multiple variables
+logvar({ life, hello });
+/* prints:
+life:  42
+hello: world!
+*/
+
+// passing a variable directly
+logvar(life);
+/* prints:
+42
+*/
+```
+
+## Installation
+
+```sh
+yarn add --dev logvar
+# npm i --save-dev logvar
+```
 
 ## License
 
