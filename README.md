@@ -11,6 +11,15 @@ Utility that prints variables in console log for debugging purpose.
 logvar({ life }); // logs `life: 42`
 ```
 
+## Table of contents
+
+- [The purpose](#the-purpose)
+  * [The real purpose: life](#the-real-purpose-life)
+- [Installation](#installation)
+- [Usage](#usage)
+  * [Demo](#demo)
+- [License](#license)
+
 ## The purpose
 
 This is the same old story: a lazy developer automating a simple but repetitive task when it is not really needed.
@@ -34,10 +43,21 @@ I think quality of life of a developer is compromised by a lot of stuff, debuggi
 
 So, this utility is meant to hug you during your debugging time saying: "Hey, you're great, you will find out what is going on. Here's some help".
 
+## Installation
+
+```sh
+yarn add --dev @nzambello/logvar
+# npm i --save-dev @nzambello/logvar
+```
+
 ## Usage
+
+Try it out on [CodeSandBox](https://codesandbox.io/s/logvar-sandbox-ub45j).
 
 ```ts
 import logvar from '@nzambello/logvar';
+// node:
+// var logvar = require('@nzambello/logvar');
 
 const life = 42;
 const hello = 'world!';
@@ -62,12 +82,14 @@ logvar(life);
 */
 ```
 
-## Installation
+### Demo
 
-```sh
-yarn add --dev @nzambello/logvar
-# npm i --save-dev @nzambello/logvar
-```
+<iframe src="https://codesandbox.io/embed/logvar-sandbox-ub45j?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2Findex.js&theme=dark"
+  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  title="logvar sandbox"
+  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## License
 
