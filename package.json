@@ -5,6 +5,9 @@
   "author": "Nicola Zambello <nzambello@protonmail.com>",
   "license": "Apache-2.0",
   "main": "build/src/main.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clean": "rimraf coverage build tmp",
     "build": "tsc -p tsconfig.release.json",
