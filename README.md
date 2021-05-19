@@ -37,7 +37,7 @@ So, this utility is meant to hug you during your debugging time saying: "Hey, yo
 ## Usage
 
 ```ts
-import logvar from 'logvar';
+import logvar from '@nzambello/logvar';
 
 const life = 42;
 const hello = 'world!';
@@ -65,8 +65,8 @@ logvar(life);
 ## Installation
 
 ```sh
-yarn add --dev logvar
-# npm i --save-dev logvar
+yarn add --dev @nzambello/logvar
+# npm i --save-dev @nzambello/logvar
 ```
 
 ## License
