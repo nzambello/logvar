@@ -5,13 +5,13 @@
 [![APLv2][license-badge]][license]
 [![Node.js CI](https://github.com/nzambello/logvar/actions/workflows/nodejs.yml/badge.svg)](https://github.com/nzambello/logvar/actions/workflows/nodejs.yml)
 
-Utility that prints variables in console log for debugging purpose.
+Utility that prints variables in console log for debugging purpose. 🐛
 
 ```js
 logvar({ life }); // logs `life: 42`
 ```
 
-## Table of contents
+## Table of contents 📖
 
 - [The purpose](#the-purpose)
   - [The real purpose: life](#the-real-purpose-life)
@@ -19,7 +19,7 @@ logvar({ life }); // logs `life: 42`
 - [Usage](#usage)
 - [License](#license)
 
-## The purpose
+## The purpose 👨‍💻
 
 This is the same old story: a lazy developer automating a simple but repetitive task when it is not really needed.
 Does the world need another utility for lazy devs? Maybe not, but I did this.
@@ -30,26 +30,26 @@ I found myself writing things like:
 console.log(`loremIpsum:`, loremIpsum);
 ```
 
-like 500 times a day to debug stuff in js.
+500 times a day to debug stuff in js.
 
 I was logging variables but having some of them, I needed a label with the name, so I logged a string with the name and then the value. 500 times a day.
 This utility is a helper function doing this for you.
 
-### The real purpose: life
+### The real purpose: life 🍻
 
 Was I losing time on this `console.log` thingy? Maybe not, but don't we developers have more to focus on?
 I think quality of life of a developer is compromised by a lot of stuff, debugging is tedious and this won't be annoying anymore!
 
-So, this utility is meant to hug you during your debugging time saying: "Hey, you're great, you will find out what is going on. Here's some help".
+So, this utility is meant to hug you during your debugging time saying: "Hey, you're great, you will find out what is going on. Here's some help". 🤗
 
-## Installation
+## Installation 🚀
 
 ```sh
 yarn add --dev @nzambello/logvar
 # npm i --save-dev @nzambello/logvar
 ```
 
-## Usage
+## Usage 🛠️
 
 Try it out on [CodeSandBox](https://codesandbox.io/embed/logvar-sandbox-ub45j?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2Findex.js&theme=dark).
 
@@ -81,7 +81,7 @@ logvar(life);
 */
 ```
 
-## License
+## License 👐
 
 Licensed under the APLv2. See the [LICENSE](https://github.com/jsynowiec/node-typescript-boilerplate/blob/main/LICENSE) file for details.
 
