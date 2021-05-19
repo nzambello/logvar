@@ -1,6 +1,6 @@
 {
   "name": "logvar",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Utility to print variables in console log for debugging purpose.",
   "author": "Nicola Zambello <nzambello@protonmail.com>",
   "license": "Apache-2.0",
