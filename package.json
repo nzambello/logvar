@@ -2,26 +2,10 @@
   "name": "logvar",
   "version": "0.0.0",
   "description": "Utility that prints variables in console log for debugging purpose.",
-  "engines": {
-    "node": ">= 14.16"
-  },
-  "devDependencies": {
-    "@types/jest": "~26.0.23",
-    "@types/node": "~14.14.44",
-    "@typescript-eslint/eslint-plugin": "~4.23.0",
-    "@typescript-eslint/parser": "~4.23.0",
-    "eslint": "~7.26.0",
-    "eslint-config-prettier": "~8.3.0",
-    "eslint-plugin-jest": "~24.3.6",
-    "jest": "~26.6.3",
-    "prettier": "~2.3.0",
-    "rimraf": "~3.0.2",
-    "ts-jest": "~26.5.6",
-    "tsutils": "~3.21.0",
-    "typescript": "~4.2.4"
-  },
+  "author": "Nicola Zambello <nzambello@protonmail.com>",
+  "license": "Apache-2.0",
+  "main": "build/src/main.js",
   "scripts": {
-    "start": "node build/src/main.js",
     "clean": "rimraf coverage build tmp",
     "build": "tsc -p tsconfig.release.json",
     "build:watch": "tsc -w -p tsconfig.release.json",
@@ -29,12 +13,48 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
-  "author": "Nicola Zambello <nzambello@protonmail.com>",
-  "license": "Apache-2.0",
+  "engines": {
+    "node": ">= 14.16"
+  },
   "dependencies": {
     "tslib": "~2.2.0"
   },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@release-it/conventional-changelog": "^2.0.1",
+    "@types/jest": "~26.0.23",
+    "@types/node": "~14.14.44",
+    "@typescript-eslint/eslint-plugin": "~4.23.0",
+    "@typescript-eslint/parser": "~4.23.0",
+    "eslint": "~7.26.0",
+    "eslint-config-prettier": "~8.3.0",
+    "eslint-plugin-jest": "~24.3.6",
+    "husky": "^6.0.0",
+    "jest": "~26.6.3",
+    "lint-staged": "^11.0.0",
+    "prettier": "~2.3.0",
+    "release-it": "^14.6.2",
+    "rimraf": "~3.0.2",
+    "ts-jest": "~26.5.6",
+    "tsutils": "~3.21.0",
+    "typescript": "~4.2.4"
+  },
   "volta": {
-    "node": "14.16.1"
+    "node": "14.16.1",
+    "yarn": "1.22.10"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json}": [
+      "yarn lint",
+      "yarn prettier --write",
+      "yarn test"
+    ]
   }
 }
